@@ -1,0 +1,7 @@
+dist
+playgrounds
+node_modules
+*.d.ts
+types.ts
+.DS_Store
+src/.DS_Store

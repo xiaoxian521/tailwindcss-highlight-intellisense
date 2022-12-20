@@ -1,0 +1,315 @@
+{
+  "name": "tailwindcss-highlight-intellisense",
+  "displayName": "Tailwind CSS Highlight Intellisense",
+  "version": "0.0.1",
+  "main": "dist/index.js",
+  "license": "MIT",
+  "publisher": "xiaoxian521",
+  "description": "Tailwind CSS Highlight Intellisense tooling for VS Code",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xiaoxian521/tailwindcss-highlight-intellisense.git"
+  },
+  "keywords": [
+    "tailwindcss",
+    "tailwind",
+    "highlight",
+    "intellisense"
+  ],
+  "preview": true,
+  "icon": "assets/icon.png",
+  "engines": {
+    "vscode": "^1.71.0"
+  },
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "contributes": {
+    "configuration": {
+      "title": "Tailwind CSS Highlight Intellisense",
+      "properties": {
+        "tailwindcss-highlight.languages": {
+          "default": [
+            "html",
+            "javascript",
+            "javascriptreact",
+            "typescript",
+            "typescriptreact",
+            "vue",
+            "php",
+            "blade",
+            "svelte"
+          ],
+          "title": "language",
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "tailwindcss-highlight.variants": {
+          "default": {
+            "responsive": {
+              "variants": [
+                "sm",
+                "md",
+                "lg",
+                "xl",
+                "2xl"
+              ],
+              "color": "#51FFFF"
+            },
+            "other": {
+              "variants": [
+                "hover",
+                "focus",
+                "focus-within",
+                "focus-visible",
+                "active",
+                "visited",
+                "target",
+                "first",
+                "last",
+                "only",
+                "odd",
+                "even",
+                "first-of-type",
+                "last-of-type",
+                "only-of-type",
+                "empty",
+                "disabled",
+                "enabled",
+                "checked",
+                "indeterminate",
+                "default",
+                "required",
+                "valid",
+                "invalid",
+                "in-range",
+                "out-of-range",
+                "placeholder-shown",
+                "autofill",
+                "read-only",
+                "open",
+                "before",
+                "after",
+                "first-letter",
+                "first-line",
+                "marker",
+                "selection",
+                "file",
+                "backdrop",
+                "placeholder",
+                "dark",
+                "portrait",
+                "landscape",
+                "motion-safe",
+                "motion-reduce",
+                "contrast-more",
+                "contrast-less",
+                "print",
+                "rtl",
+                "ltr"
+              ],
+              "color": "#2DF3AC"
+            }
+          },
+          "type": "object"
+        },
+        "tailwindcss-highlight.configs": {
+          "default": {
+            "padding": {
+              "regex": "(?<=[:`'\"\\s])(|-)p(|t|b|r|l|x|y)-[^`'\"\\s]+"
+            },
+            "margin": {
+              "regex": "(?<=[:`'\"\\s])(|-)m(|t|b|r|l|x|y)-[^`'\"\\s]+"
+            },
+            "space": {
+              "regex": "(?<=[:`'\"\\s])(|-)space-(x|y)-[^`'\"\\s]+"
+            },
+            "border": {
+              "regex": "(?<=[:`'\"\\s])border(?!-collapse|-separate)(|-)[^`'\"\\s]*"
+            },
+            "rounded": {
+              "regex": "(?<=[:`'\"\\s])rounded(|-)[^`'\"\\s]*"
+            },
+            "divide": {
+              "regex": "(?<=[:`'\"\\s])divide(|-)[^`'\"\\s]*"
+            },
+            "ring": {
+              "regex": "(?<=[:`'\"\\s])ring(|-)[^`'\"\\s]*"
+            },
+            "width": {
+              "regex": "(?<=[:`'\"\\s])(|-)(|max|min)(|-)w-[^`'\"\\s]+"
+            },
+            "height": {
+              "regex": "(?<=[:`'\"\\s])(|-)(|max|min)(|-)h-[^`'\"\\s]+"
+            },
+            "flex": {
+              "regex": "(?<=[:`'\"\\s])(|inline-)flex(|-)[^`'\"\\s]*"
+            },
+            "grid": {
+              "regex": "(?<=[:`'\"\\s])grid(|-)[^`'\"\\s]*"
+            },
+            "order": {
+              "regex": "(?<=[:`'\"\\s])(|-)order-[^`'\"\\s]+"
+            },
+            "gridColumn": {
+              "regex": "(?<=[:`'\"\\s])col(|-)[^`'\"\\s]+"
+            },
+            "gridRow": {
+              "regex": "(?<=[:`'\"\\s])row(|-)[^`'\"\\s]+"
+            },
+            "gridAutoColumns": {
+              "regex": "(?<=[:`'\"\\s])auto-cols-[^`'\"\\s]+"
+            },
+            "gridAutoRows": {
+              "regex": "(?<=[:`'\"\\s])auto-rows-[^`'\"\\s]+"
+            },
+            "gap": {
+              "regex": "(?<=[:`'\"\\s])gap-[^`'\"\\s]+"
+            },
+            "justifyContent": {
+              "regex": "(?<=[:`'\"\\s])justify-(start|end|center|between|around|evenly)"
+            },
+            "justifyItems": {
+              "regex": "(?<=[:`'\"\\s])justify-items-(start|end|center|stretch)"
+            },
+            "justifySelf": {
+              "regex": "(?<=[:`'\"\\s])justify-self-(auto|start|end|center|stretch)"
+            },
+            "alignContent": {
+              "regex": "(?<=[:`'\"\\s])content-(start|end|center|between|around|evenly)"
+            },
+            "alignItems": {
+              "regex": "(?<=[:`'\"\\s])items-(start|end|center|baseline|stretch)"
+            },
+            "alignSelf": {
+              "regex": "(?<=[:`'\"\\s])self-(auto|start|end|center|stretch)"
+            },
+            "placeContent": {
+              "regex": "(?<=[:`'\"\\s])place-content-(center|start|end|between|around|evenly|stretch)"
+            },
+            "placeItems": {
+              "regex": "(?<=[:`'\"\\s])place-items-(start|end|center|stretch)"
+            },
+            "placeSelf": {
+              "regex": "(?<=[:`'\"\\s])place-self-(auto|start|end|center|stretch)"
+            },
+            "table": {
+              "regex": "(?<=[:`'\"\\s])(table-fixed|table-auto|table)"
+            },
+            "borderCollapse": {
+              "regex": "(?<=[:`'\"\\s])border-(collapse|separate)"
+            },
+            "transition": {
+              "regex": "(?<=[:`'\"\\s])transition(|-)[^`'\"\\s]*"
+            },
+            "transitionDuration": {
+              "regex": "(?<=[:`'\"\\s])duration-[^`'\"\\s]*"
+            },
+            "transitionTimingFunction": {
+              "regex": "(?<=[:`'\"\\s])ease(|-)[^`'\"\\s]*"
+            },
+            "transitionDelay": {
+              "regex": "(?<=[:`'\"\\s])delay-[^`'\"\\s]*"
+            },
+            "animation": {
+              "regex": "(?<=[:`'\"\\s])animate-[^`'\"\\s]+"
+            },
+            "transform": {
+              "regex": "(?<=[:`'\"\\s])transform(|-)[^`'\"\\s]*"
+            },
+            "transformOrigin": {
+              "regex": "(?<=[:`'\"\\s])origin-[^`'\"\\s]+"
+            },
+            "scale": {
+              "regex": "(?<=[:`'\"\\s])scale-[^`'\"\\s]+"
+            },
+            "rotate": {
+              "regex": "(?<=[:`'\"\\s])(|-)rotate-[^`'\"\\s]+"
+            },
+            "translate": {
+              "regex": "(?<=[:`'\"\\s])(|-)translate-[^`'\"\\s]+"
+            },
+            "skew": {
+              "regex": "(?<=[:`'\"\\s])(|-)skew-[^`'\"\\s]+"
+            },
+            "text": {
+              "regex": "(?<=[:`'\"\\s])text-[^`'\"\\s]+"
+            },
+            "textDecoration": {
+              "regex": "(?<=[:`'\"\\s])(underline|line-through|no-underline)"
+            },
+            "textTransform": {
+              "regex": "(?<=[:`'\"\\s])(uppercase|lowercase|capitalize|normal-case)"
+            },
+            "textOverflow": {
+              "regex": "(?<=[:`'\"\\s])(truncate|overflow-ellipsis|overflow-clip)"
+            },
+            "verticalAlign": {
+              "regex": "(?<=[:`'\"\\s])align-[^`'\"\\s]+"
+            },
+            "whitespace": {
+              "regex": "(?<=[:`'\"\\s])whitespace-(normal|nowrap|pre(-line|-wrap|))"
+            },
+            "wordBreak": {
+              "regex": "(?<=[:`'\"\\s])break-(normal|words|all)"
+            },
+            "font": {
+              "regex": "(?<=[:`'\"\\s])font-[^`'\"\\s]+"
+            },
+            "fontStyle": {
+              "regex": "(?<=[:`'\"\\s])(italic|not-italic)"
+            },
+            "leading": {
+              "regex": "(?<=[:`'\"\\s])leading-[^`'\"\\s]+"
+            },
+            "tracking": {
+              "regex": "(?<=[:`'\"\\s])tracking-[^`'\"\\s]+"
+            },
+            "background": {
+              "regex": "(?<=[:`'\"\\s])bg-[^`'\"\\s]+"
+            },
+            "gradientColorStops": {
+              "regex": "(?<=[:`'\"\\s])(from|via|to)-[^`'\"\\s]+"
+            },
+            "position": {
+              "regex": "(?<=[:`'\"\\s])(static|fixed|absolute|relative|sticky)"
+            },
+            "inset": {
+              "regex": "(?<=[:`'\"\\s])(|-)(inset|top|bottom|left|right)-[^`'\"\\s]+"
+            }
+          },
+          "title": "configs",
+          "type": "object"
+        }
+      }
+    }
+  },
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch src",
+    "package": "tsup && vsce package --no-yarn",
+    "vscode:publish": "vsce publish",
+    "lint": "eslint . --fix && prettier --write  \"src/**\"",
+    "test": "jest"
+  },
+  "devDependencies": {
+    "@types/jest": "29.0.3",
+    "@types/node": "18.0.0",
+    "@types/vscode": "1.71.0",
+    "@typescript-eslint/eslint-plugin": "^5.47.0",
+    "@typescript-eslint/parser": "^5.47.0",
+    "eslint": "8.23.1",
+    "eslint-plugin": "^1.0.1",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "jest": "29.0.3",
+    "prettier": "2.7.1",
+    "rimraf": "3.0.2",
+    "ts-jest": "29.0.1",
+    "tsup": "^6.5.0",
+    "typescript": "4.8.3",
+    "vsce": "^2.15.0"
+  }
+}
