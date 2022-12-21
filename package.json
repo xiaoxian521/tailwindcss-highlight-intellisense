@@ -231,6 +231,9 @@
             "underline": {
               "regex": "(?<=[:`'\"\\s])underline(|-)[^`'\"\\s]*"
             },
+            "outline": {
+              "regex": "(?<=[:`'\"\\s])outline(|-)[^`'\"\\s]*"
+            },
             "padding": {
               "regex": "(?<=[:`'\"\\s])(|-)p(|t|b|r|l|x|y)-[^`'\"\\s]+"
             },
