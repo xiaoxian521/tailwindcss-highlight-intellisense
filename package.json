@@ -171,6 +171,12 @@
             "stackedFractions": {
               "regex": "stacked-fractions"
             },
+            "mixBlendNormal": {
+              "regex": "mix-blend-normal"
+            },
+            "mixBlendSaturation": {
+              "regex": "mix-blend-saturation"
+            },
             "aspect": {
               "regex": "(?<=[:`'\"\\s])(|-)(|auto|square|video)(|-)aspect-[^`'\"\\s]+"
             },
@@ -233,6 +239,12 @@
             },
             "outline": {
               "regex": "(?<=[:`'\"\\s])outline(|-)[^`'\"\\s]*"
+            },
+            "shadow": {
+              "regex": "(?<=[:`'\"\\s])shadow(|-)[^`'\"\\s]*"
+            },
+            "opacity": {
+              "regex": "(?<=[:`'\"\\s])opacity(|-)[^`'\"\\s]*"
             },
             "padding": {
               "regex": "(?<=[:`'\"\\s])(|-)p(|t|b|r|l|x|y)-[^`'\"\\s]+"
