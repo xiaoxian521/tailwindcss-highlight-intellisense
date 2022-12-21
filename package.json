@@ -180,6 +180,12 @@
             "appearanceNone": {
               "regex": "appearance-none"
             },
+            "srOnly": {
+              "regex": "sr-only"
+            },
+            "notSrOnly": {
+              "regex": "not-sr-only"
+            },
             "aspect": {
               "regex": "(?<=[:`'\"\\s])(|-)(|auto|square|video)(|-)aspect-[^`'\"\\s]+"
             },
@@ -308,6 +314,12 @@
             },
             "willChange": {
               "regex": "(?<=[:`'\"\\s])will-change(|-)[^`'\"\\s]*"
+            },
+            "fill": {
+              "regex": "(?<=[:`'\"\\s])fill(|-)[^`'\"\\s]*"
+            },
+            "stroke": {
+              "regex": "(?<=[:`'\"\\s])stroke(|-)[^`'\"\\s]*"
             },
             "padding": {
               "regex": "(?<=[:`'\"\\s])(|-)p(|t|b|r|l|x|y)-[^`'\"\\s]+"
