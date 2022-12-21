@@ -117,6 +117,66 @@
         },
         "tailwindcss-highlight.configs": {
           "default": {
+            "container": {
+              "regex": "container"
+            },
+            "contents": {
+              "regex": "contents"
+            },
+            "list-item": {
+              "regex": "list-item"
+            },
+            "hidden": {
+              "regex": "hidden"
+            },
+            "isolate": {
+              "regex": "isolate"
+            },
+            "visible": {
+              "regex": "visible"
+            },
+            "invisible": {
+              "regex": "invisible"
+            },
+            "aspect": {
+              "regex": "(?<=[:`'\"\\s])(|-)(|auto|square|video)(|-)aspect-[^`'\"\\s]+"
+            },
+            "break": {
+              "regex": "(?<=[:`'\"\\s])break(|-)[^`'\"\\s]*"
+            },
+            "box": {
+              "regex": "(?<=[:`'\"\\s])box(|-)[^`'\"\\s]*"
+            },
+            "inline": {
+              "regex": "(?<=[:`'\"\\s])inline(|-)[^`'\"\\s]*"
+            },
+            "block": {
+              "regex": "(?<=[:`'\"\\s])block(|-)[^`'\"\\s]*"
+            },
+            "flow": {
+              "regex": "(?<=[:`'\"\\s])flow(|-)[^`'\"\\s]*"
+            },
+            "float": {
+              "regex": "(?<=[:`'\"\\s])float(|-)[^`'\"\\s]*"
+            },
+            "clear": {
+              "regex": "(?<=[:`'\"\\s])clear(|-)[^`'\"\\s]*"
+            },
+            "isolation": {
+              "regex": "(?<=[:`'\"\\s])isolation(|-)[^`'\"\\s]*"
+            },
+            "object": {
+              "regex": "(?<=[:`'\"\\s])object(|-)[^`'\"\\s]*"
+            },
+            "overflow": {
+              "regex": "(?<=[:`'\"\\s])overflow(|-)[^`'\"\\s]*"
+            },
+            "overscroll": {
+              "regex": "(?<=[:`'\"\\s])overscroll(|-)[^`'\"\\s]*"
+            },
+            "z": {
+              "regex": "(?<=[:`'\"\\s])z(|-)[^`'\"\\s]*"
+            },
             "padding": {
               "regex": "(?<=[:`'\"\\s])(|-)p(|t|b|r|l|x|y)-[^`'\"\\s]+"
             },
@@ -196,7 +256,7 @@
               "regex": "(?<=[:`'\"\\s])place-self-(auto|start|end|center|stretch)"
             },
             "table": {
-              "regex": "(?<=[:`'\"\\s])(table-fixed|table-auto|table)"
+              "regex": "(?<=[:`'\"\\s])(table-fixed|table-auto|table-caption|table-column-group|table)"
             },
             "borderCollapse": {
               "regex": "(?<=[:`'\"\\s])border-(collapse|separate)"

@@ -88,7 +88,7 @@ export class Decoration {
     }
     this.timer = setTimeout(() => {
       this.decorate(editor);
-    }, 500);
+    }, 20);
   }
 
   dispose(): void {
