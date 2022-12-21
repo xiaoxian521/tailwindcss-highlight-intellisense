@@ -246,6 +246,36 @@
             "opacity": {
               "regex": "(?<=[:`'\"\\s])opacity(|-)[^`'\"\\s]*"
             },
+            "blur": {
+              "regex": "(?<=[:`'\"\\s])blur(|-)[^`'\"\\s]*"
+            },
+            "brightness": {
+              "regex": "(?<=[:`'\"\\s])brightness(|-)[^`'\"\\s]*"
+            },
+            "contrast": {
+              "regex": "(?<=[:`'\"\\s])contrast(|-)[^`'\"\\s]*"
+            },
+            "dropShadow": {
+              "regex": "(?<=[:`'\"\\s])drop-shadow(|-)[^`'\"\\s]*"
+            },
+            "grayscale": {
+              "regex": "(?<=[:`'\"\\s])grayscale(|-)[^`'\"\\s]*"
+            },
+            "hueRotate": {
+              "regex": "(?<=[:`'\"\\s])hue-rotate(|-)[^`'\"\\s]*"
+            },
+            "invert": {
+              "regex": "(?<=[:`'\"\\s])invert(|-)[^`'\"\\s]*"
+            },
+            "saturate": {
+              "regex": "(?<=[:`'\"\\s])saturate(|-)[^`'\"\\s]*"
+            },
+            "sepia": {
+              "regex": "(?<=[:`'\"\\s])sepia(|-)[^`'\"\\s]*"
+            },
+            "backdrop": {
+              "regex": "(?<=[:`'\"\\s])backdrop(|-)[^`'\"\\s]*"
+            },
             "padding": {
               "regex": "(?<=[:`'\"\\s])(|-)p(|t|b|r|l|x|y)-[^`'\"\\s]+"
             },
