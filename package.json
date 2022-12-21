@@ -138,6 +138,39 @@
             "invisible": {
               "regex": "invisible"
             },
+            "antialiased": {
+              "regex": "antialiased"
+            },
+            "subpixelAntialiased": {
+              "regex": "subpixel-antialiased"
+            },
+            "normalNums": {
+              "regex": "normal-nums"
+            },
+            "ordinal": {
+              "regex": "ordinal"
+            },
+            "slashedZero": {
+              "regex": "slashed-zero"
+            },
+            "liningNums": {
+              "regex": "lining-nums"
+            },
+            "oldstyleNums": {
+              "regex": "oldstyle-nums"
+            },
+            "proportionalNums": {
+              "regex": "proportional-nums"
+            },
+            "tabularNums": {
+              "regex": "tabular-nums"
+            },
+            "diagonalFractions": {
+              "regex": "diagonal-fractions"
+            },
+            "stackedFractions": {
+              "regex": "stacked-fractions"
+            },
             "aspect": {
               "regex": "(?<=[:`'\"\\s])(|-)(|auto|square|video)(|-)aspect-[^`'\"\\s]+"
             },
@@ -185,6 +218,18 @@
             },
             "shrink": {
               "regex": "(?<=[:`'\"\\s])shrink(|-)[^`'\"\\s]*"
+            },
+            "list": {
+              "regex": "(?<=[:`'\"\\s])list(|-)[^`'\"\\s]*"
+            },
+            "decoration": {
+              "regex": "(?<=[:`'\"\\s])decoration(|-)[^`'\"\\s]*"
+            },
+            "indent": {
+              "regex": "(?<=[:`'\"\\s])indent(|-)[^`'\"\\s]*"
+            },
+            "underline": {
+              "regex": "(?<=[:`'\"\\s])underline(|-)[^`'\"\\s]*"
             },
             "padding": {
               "regex": "(?<=[:`'\"\\s])(|-)p(|t|b|r|l|x|y)-[^`'\"\\s]+"
@@ -247,7 +292,7 @@
               "regex": "(?<=[:`'\"\\s])justify-self-(auto|start|end|center|stretch)"
             },
             "alignContent": {
-              "regex": "(?<=[:`'\"\\s])content-(start|end|center|between|around|evenly|baseline)"
+              "regex": "(?<=[:`'\"\\s])content-(start|end|center|between|around|evenly|baseline|none)"
             },
             "alignItems": {
               "regex": "(?<=[:`'\"\\s])items-(start|end|center|baseline|stretch|baseline)"
@@ -307,7 +352,7 @@
               "regex": "(?<=[:`'\"\\s])text-[^`'\"\\s]+"
             },
             "textDecoration": {
-              "regex": "(?<=[:`'\"\\s])(underline|line-through|no-underline)"
+              "regex": "(?<=[:`'\"\\s])(underline|overline|line-through|no-underline)"
             },
             "textTransform": {
               "regex": "(?<=[:`'\"\\s])(uppercase|lowercase|capitalize|normal-case)"
