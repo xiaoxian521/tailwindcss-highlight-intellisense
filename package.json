@@ -177,6 +177,15 @@
             "z": {
               "regex": "(?<=[:`'\"\\s])z(|-)[^`'\"\\s]*"
             },
+            "basis": {
+              "regex": "(?<=[:`'\"\\s])basis(|-)[^`'\"\\s]*"
+            },
+            "grow": {
+              "regex": "(?<=[:`'\"\\s])grow(|-)[^`'\"\\s]*"
+            },
+            "shrink": {
+              "regex": "(?<=[:`'\"\\s])shrink(|-)[^`'\"\\s]*"
+            },
             "padding": {
               "regex": "(?<=[:`'\"\\s])(|-)p(|t|b|r|l|x|y)-[^`'\"\\s]+"
             },
@@ -238,19 +247,19 @@
               "regex": "(?<=[:`'\"\\s])justify-self-(auto|start|end|center|stretch)"
             },
             "alignContent": {
-              "regex": "(?<=[:`'\"\\s])content-(start|end|center|between|around|evenly)"
+              "regex": "(?<=[:`'\"\\s])content-(start|end|center|between|around|evenly|baseline)"
             },
             "alignItems": {
-              "regex": "(?<=[:`'\"\\s])items-(start|end|center|baseline|stretch)"
+              "regex": "(?<=[:`'\"\\s])items-(start|end|center|baseline|stretch|baseline)"
             },
             "alignSelf": {
-              "regex": "(?<=[:`'\"\\s])self-(auto|start|end|center|stretch)"
+              "regex": "(?<=[:`'\"\\s])self-(auto|start|end|center|stretch|baseline)"
             },
             "placeContent": {
-              "regex": "(?<=[:`'\"\\s])place-content-(center|start|end|between|around|evenly|stretch)"
+              "regex": "(?<=[:`'\"\\s])place-content-(center|start|end|between|around|evenly|baseline|stretch)"
             },
             "placeItems": {
-              "regex": "(?<=[:`'\"\\s])place-items-(start|end|center|stretch)"
+              "regex": "(?<=[:`'\"\\s])place-items-(start|end|center|baseline|stretch)"
             },
             "placeSelf": {
               "regex": "(?<=[:`'\"\\s])place-self-(auto|start|end|center|stretch)"
