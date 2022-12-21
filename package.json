@@ -177,6 +177,9 @@
             "mixBlendSaturation": {
               "regex": "mix-blend-saturation"
             },
+            "appearanceNone": {
+              "regex": "appearance-none"
+            },
             "aspect": {
               "regex": "(?<=[:`'\"\\s])(|-)(|auto|square|video)(|-)aspect-[^`'\"\\s]+"
             },
@@ -275,6 +278,36 @@
             },
             "backdrop": {
               "regex": "(?<=[:`'\"\\s])backdrop(|-)[^`'\"\\s]*"
+            },
+            "accent": {
+              "regex": "(?<=[:`'\"\\s])accent(|-)[^`'\"\\s]*"
+            },
+            "cursor": {
+              "regex": "(?<=[:`'\"\\s])cursor(|-)[^`'\"\\s]*"
+            },
+            "caret": {
+              "regex": "(?<=[:`'\"\\s])caret(|-)[^`'\"\\s]*"
+            },
+            "pointer": {
+              "regex": "(?<=[:`'\"\\s])pointer(|-)[^`'\"\\s]*"
+            },
+            "resize": {
+              "regex": "(?<=[:`'\"\\s])resize(|-)[^`'\"\\s]*"
+            },
+            "scroll": {
+              "regex": "(?<=[:`'\"\\s])scroll(|-)[^`'\"\\s]*"
+            },
+            "snap": {
+              "regex": "(?<=[:`'\"\\s])snap(|-)[^`'\"\\s]*"
+            },
+            "touch": {
+              "regex": "(?<=[:`'\"\\s])touch(|-)[^`'\"\\s]*"
+            },
+            "select": {
+              "regex": "(?<=[:`'\"\\s])select(|-)[^`'\"\\s]*"
+            },
+            "willChange": {
+              "regex": "(?<=[:`'\"\\s])will-change(|-)[^`'\"\\s]*"
             },
             "padding": {
               "regex": "(?<=[:`'\"\\s])(|-)p(|t|b|r|l|x|y)-[^`'\"\\s]+"
