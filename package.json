@@ -1,7 +1,7 @@
 {
   "name": "tailwindcss-highlight-intellisense",
   "displayName": "Tailwind CSS Highlight Intellisense",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": "dist/index.js",
   "license": "MIT",
   "publisher": "xiaoxian521",
@@ -494,7 +494,7 @@
     "build": "tsup",
     "dev": "tsup --watch src",
     "package": "tsup && vsce package --no-yarn",
-    "vscode:publish": "vsce publish",
+    "pub": "vsce publish --no-yarn",
     "lint": "eslint . --fix && prettier --write  \"src/**\"",
     "test": "jest"
   },
